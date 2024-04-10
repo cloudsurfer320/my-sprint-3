@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styling.css">
+    <script src="js/scripting.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-card">
+            <div class="form-title">
+                Please enter the information on the following details and preferences of your fashionwear
+            </div>
+            <br>
+            <div class="form">
+
+                <form id="myForm">
+                    <label for="Full Name">Full name:</label><br>
+                    <input class="input" type="text" id="Full Name" name="Full Name" required><br><br>
+                    
+                    <label for="Age">Age:</label><br>
+                    <input type="number" class="input" id="Age" name="Age" required><br><br>
+                    
+                    <label for="Category">Category:</label>
+                    <select id="Category" name="Category" required>
+                        <option value="men">Men</option>
+                        <option value="women">Women</option>
+                        <option value="kids">Kids</option>
+                    </select><br><br>
+                    
+                    <label for="size">Size:</label>
+                    <select id="size" name="size">
+                        <option value="Small" selected>S</option>
+                        <option value="Medium">M</option>
+                        <option value="Large">L</option>
+                        <option value="Extra Large">XL</option>
+                        <option value="Double Extra Large">XXL</option>
+                    </select><br><br>
+                    
+                    <label for="Email Address">Email Address:</label><br>
+                    <input class="input" type="email" id="Email Address" placeholder="example@abc.com" name="Email Address" required><br><br>
+                    
+                    <label for="familiar">Are you familiar with our website "Yestore"?</label><br>
+                    <input class="radio" type="radio" id="subscribe" name="Known User" value="Yes" checked> Yes
+                    <input class="radio" type="radio" id="unsubscribe" name="Known User" value="No"> No<br><br>
+                    
+                    <label for="Subscription status">Would you like to stay tuned with our website?</label><br>
+                    <input type="radio" id="Subscription status" name="Subscription status" value="Subscribed"> Yes
+                    <input type="radio" id="Subscription status" name="Subscription status" value="Did not Subscribe" checked> No
+                    <br><br>
+                    <button type="button" onclick="saveFormData()">Submit</button>
+                </form>      
+            </div>
+            </div>
+        </div>
+    </body>
+    </html>
